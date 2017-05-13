@@ -22,4 +22,9 @@ public class HomeController {
 	public String loginpage(){
 		return "login";
 	}
+	@RequestMapping("/signout")
+	public String signoutpage(){
+		return "signout";
+	}
+
 }

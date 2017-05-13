@@ -6,20 +6,32 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Transient;
+import javax.validation.constraints.Min;
+
+import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.web.multipart.MultipartFile;
 
 @Entity
 public class Product {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 private int id;
+	@NotEmpty(message="Product name is mandatory")
 private String name;
+	@NotEmpty(message="Manufacturer details is mandatory")
 private String manufacturer;
+	@Min(value=100,message="Minimum price should be 100")
 private double price;
+	@Min(value=10,message="unit in stock minimum value is 10")
 private int unitInStock;
+	@NotEmpty(message="Description is mandatory")
 private String description;
 @ManyToOne
 @JoinColumn(name="cid")
 private Category category;
+@Transient
+private MultipartFile image;
 public int getId() {
 	return id;
 }
@@ -62,5 +74,10 @@ public Category getCategory() {
 public void setCategory(Category category) {
 	this.category = category;
 }
-
+public MultipartFile getImage() {
+	return image;
+}
+public void setImage(MultipartFile image) {
+	this.image = image;
+}
 }

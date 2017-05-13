@@ -12,14 +12,14 @@ import com.niit.model.Category;
 @Repository
 public class CategoryDaoImpl implements CategoryDao {
 	@Autowired
-private SessionFactory sessionFactory;
-	public List<Category> getAllCategories() {
-		Session session=sessionFactory.openSession();
-		Query query=session.createQuery("from category");
-		List<Category> categories=query.list();
-		session.close();
-		return categories;
-	}
+	private SessionFactory sessionFactory;
+		public List<Category> getAllCategories() {
+		    Session session=sessionFactory.openSession();
+		    Query query=session.createQuery("from Category");
+		    List<Category> categories=query.list();
+		    session.close();
+		    return categories;
+		}
 	
 
 }

@@ -13,7 +13,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img class="first-slide home-image" src="resources/images/img1" alt="first slide" >
+                    <img class="first-slide home-image" src="resources/images/img1.jpg" alt="first slide" >
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>WELCOME TO THE CAR STORE</h1>
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img class="second-slide home-image" src="resources/images/img2" alt="Second slide">
+                    <img class="second-slide home-image" src="resources/images/img2.jpg" alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>The Car Store.</h1>
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img class="third-slide home-image " src="resources/images/img3" alt="Third slide">
+                    <img class="third-slide home-image " src="resources/images/img3.jpg" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>The Car You Love</h1>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                  <div class="item">
-                    <img class="forth-slide home-image " src="resources/images/img4" alt="forth slide">
+                    <img class="forth-slide home-image " src="resources/images/img4.jpg" alt="forth slide">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Any car can be a "cool" car</h1>

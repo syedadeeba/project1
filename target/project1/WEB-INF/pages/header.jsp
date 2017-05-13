@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<%@ isElignored %>
+<%@page isELIgnored="false" %>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -24,17 +24,17 @@
       </button>
 			<div class="navbar-header">
 
-				<a class="navbar-brand" href="#"><img src="resources/images/ast.jpg" alt="NIIT" height="30px" width="30px"></a>
+				<a class="navbar-brand" href="#"><img src="resources/images/img3.jpg" alt="NIIT" height="30px" width="30px"></a>
 			</div>
 			<div class="collapse navbar-collapse" id="collapse-example">
 			<ul class="nav navbar-nav">
-			<li class="active"><a href="home.html">Home<span class="sr-only">You are in home page link</span></a></li>
 			<li><a href="home">home</a></li>
 			<li><a href="aboutus">about us</a></li>
+			
 			<url:url var="url" value="/admin/product/productform"></url:url>
 			<!-- http://localhost:8080/project1/admin/product/productform -->
-			<li><a href="${url }">Add New Product</a></li>
-			<url:url var="allProducts" value="/all/product/getAllProducts"></url:url>
+			<li><a href="${url}">Add New Product</a></li>
+			<url:url var="allProducts" value="/all/product/productlist"></url:url>
 			<li><a href="${allProducts}">Browse all products</a></li>
 			</ul>
 			
@@ -48,7 +48,7 @@
 			</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-			<li><a href="#">Login</a> </li>
+			<li><a href="login">Login</a> </li>
 			<li><button class="btn btn-default">sign out</button></li>
 			
 			

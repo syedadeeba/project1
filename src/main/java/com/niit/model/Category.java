@@ -12,10 +12,10 @@ import javax.persistence.OneToMany;
 public class Category {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
- private int cid;
- private String categoryDetails;
- @OneToMany(mappedBy="category")
- private List<Product> products;
+private int cid;
+private String categoryDetails;
+@OneToMany(mappedBy="category")
+private List<Product> products;
 public int getCid() {
 	return cid;
 }
@@ -27,7 +27,6 @@ public String getCategoryDetails() {
 }
 public void setCategoryDetails(String categoryDetails) {
 	this.categoryDetails = categoryDetails;
-	
 }
 public List<Product> getProducts() {
 	return products;
@@ -35,5 +34,4 @@ public List<Product> getProducts() {
 public void setProducts(List<Product> products) {
 	this.products = products;
 }
-
 }

@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<center>
 PRODUCT NAME:   ${product.name }         <br>
 PRICE       :   ${product.price }         <br>
 MANUFACTURER:   ${product.manufacturer }         <br>
@@ -15,6 +16,7 @@ DESCRIPTION :	${product.description }		<Br>
 
 <url:url value="/all/product/productlist" var="url"></url:url>
 <a href="${url }">Browse All Products</a>
+</center>
 </body>
 <%@include file="footer.jsp" %>
 </html>

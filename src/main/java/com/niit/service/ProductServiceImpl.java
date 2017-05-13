@@ -11,8 +11,8 @@ import com.niit.model.Product;
 public class ProductServiceImpl implements ProductService {
 	@Autowired	
 	private ProductDao productDao;
-		public void saveProduct(Product product) {
-		   productDao.saveProduct(product);
+		public void saveOrUpdateProduct(Product product) {
+		   productDao.saveOrUpdateProduct(product);
 			
 		}
 		public List<Product> getAllProducts() {

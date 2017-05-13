@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ include file="header.jsp" %>
+    <%@ include file="headerhome.jsp" %>
  <%@ page isELIgnored="false" %>
 <div class="container-fluid">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -16,8 +17,8 @@
                     <img class="first-slide home-image" src="resources/images/img1.jpg" alt="first slide" >
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>WELCOME TO THE CAR STORE</h1>
-                            <p>Here You Can Browse And Buy Cars.Order Now For Your Amazing New Arrivals</p>
+                            <h1>WELCOME TO THE JEWELRY STORE</h1>
+                            <p>Here You Can Browse And Buy Jewlery.Order Now For Your Amazing New Arrivals</p>
                         </div>
                     </div>
                 </div>
@@ -25,7 +26,7 @@
                     <img class="second-slide home-image" src="resources/images/img2.jpg" alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>The Car Store.</h1>
+                            <h1>The Jewelry Store.</h1>
                             <p>online shopping can make your life more easier</p>
                         </div>
                     </div>
@@ -34,8 +35,8 @@
                     <img class="third-slide home-image " src="resources/images/img3.jpg" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>The Car You Love</h1>
-                            <p>live Freely,Work Happily And Drive Safely!!</p>
+                            <h1>The Jewelry You Love</h1>
+                            <p>live Freely,Wore your wish!!</p>
                         </div>
                     </div>
                 </div>
@@ -43,8 +44,8 @@
                     <img class="forth-slide home-image " src="resources/images/img4.jpg" alt="forth slide">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Any car can be a "cool" car</h1>
-                            <p>your life,your car...you own it!!</p>
+                            <h1>Any Jewelry can be a precious</h1>
+                            <p>your life,your Jewelry...you own it!!</p>
                         </div>
                     </div>
                 </div>

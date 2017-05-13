@@ -10,43 +10,72 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div class="container wrapper">
+<div class="container-wrapper">
 <div class="container">
 <url:url var="url" value="/admin/product/saveproduct"></url:url>
-<form:form action="${url }" modelAttribute="product" method="post">
+<form:form action="${url }" modelAttribute="product" method="post" enctype="multipart/form-data">
+
 <div class="form-group">
-<label for="id"></label>
-<form:hidden path="id"></form:hidden>
+<label for="id">Product Id</label>
+<form:input path="id"  disabled="true"></form:input>
+<form:errors path="id" cssStyle="color:red"></form:errors>
 </div>
+
 <div class="form-group">
 <label for="name">Enter Product name</label>
 <form:input path="name"></form:input>
+<form:errors path="name" cssStyle="color:red"></form:errors>
 </div>
+
 <div class="form-group">
-<label for="description">Enter Product description</label>
+<label for="description">Enter Description</label>
 <form:input path="description"></form:input>
+<form:errors path="description" cssStyle="color:red"></form:errors>
 </div>
+
+
 <div class="form-group">
 <label for="manufacturer">Product Manufacturer</label>
-<form:form hidden path="manufacturer"></form:form>
+<form:input  path="manufacturer"></form:input>
+<form:errors path="manufacturer" cssStyle="color:red"></form:errors>
 </div>
+
+
 <div class="form-group">
 <label for="price">Product Price</label>
-<form:input hidden path="price"></form:input>
+<form:input  path="price"></form:input>
+<form:errors path="price" cssStyle="color:red"></form:errors>
 </div>
+
+
 <div class="form-group">
-<label for="unitInStock"></label>
-<form:form hidden path="unitInStock"></form:form>
+<label for="unitInStock">Unit In Stock</label>
+<form:input  path="unitInStock"></form:input>
+<form:errors path="unitInStock" cssStyle="color:red"></form:errors>
 </div>
+
 <div class="form-group">
 <label for="category">Select Category</label>
 <c:forEach items="${categorydetails }" var="c">
-<form:radiobutton path="category.cid" value="${c.cid }"/>${c.categoryDetails}
+ 
+<form:radiobutton path="category.cid" value="${c.cid }"/>${c.categoryDetails }
+
 </c:forEach>
+<form:errors path="category" cssStyle="color:red"></form:errors>
 </div>
 
-</form:form>
+<div class="form-group">
+<label for="image">Upload Image</label>
+<input type="file" name="image" >
 </div>
+
+<input type="submit" value="[Add/Edit] Product">
+
+</form:form>
+
+
+</div>
+
 </div>
 </body>
 <%@ include file="footer.jsp" %>
