@@ -38,10 +38,11 @@
     <!-- Main CSS -->
     <link href='<c:url value="/resources/css/main.css" />' rel="stylesheet">
 </head>
+
 <body>
+
 <nav class="navbar navbar-default">
 <div class="container-fluid">
-<button type="button" onclick="alert('logout successfully!')">signout</button>
 <button type="button" class="navbar-toggle collapsed" 
    data-toggle="collapse" data-target="#collapse-example" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -49,13 +50,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <div class="navbar-header">
-
-	<a class="navbar-brand" href="#"><img src="resources/images/img4.jpg" alt="JEWELRY" height="30px" width="30px"></a>
+    <div style="background-color:pink;color:blue;padding:1px;">
+    <div class="navbar-header">
+	<a class="navbar-brand" href="#"><img src="resources/images/img22.jpg" alt="JEWELRY" height="30px" width="30px"></a>
 	</div>
-    <ul class="nav navbar-nav">
    
-   
+   <ul class="nav navbar-nav">  
    <url:url value="/home" var="url"></url:url>
    <li> <a href="${url }">Home</a> </li>
    
@@ -66,23 +66,19 @@
    <li><a href="${url }">Add New Product</a></li>
    
    <url:url value="/all/product/productlist" var="url"></url:url>
-   <li><a href="${url }">Browse all products</a></li>
- 
-			
-    </ul>
+   <li><a href="${url }">Browse all products</a></li>	
+   </ul>
+   
    <ul class="nav navbar-nav navbar-right">
    <url:url value="/login" var="url"></url:url>
    <li> <a href="${url }">Login</a> </li>
    
    <url:url value="/signout" var="url"></url:url>
    <li><a href="${url }">signout</a></li>
+   </ul>
    
-			</ul>
-
-
+   </div>
 </div>
-
 </nav>
-
 </body>
 </html>

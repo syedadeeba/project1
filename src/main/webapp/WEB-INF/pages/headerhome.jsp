@@ -48,7 +48,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-	   
+	   <div style="background-color:pink;color:blue;padding:1px;">
 			<div class="collapse navbar-collapse" id="collapse-example">
 			<ul class="nav navbar-nav">
            
@@ -99,6 +99,7 @@
 			</li>
 			
 			</ul>
+			</div>
 			</div>
 		</div>
 	</nav>
